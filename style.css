@@ -1,0 +1,67 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+footer {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85em;
+    margin: 10px;
+    line-height: 1.5em;
+    color: #5C6670;
+}
+
+header {
+    position: sticky;
+    background-color: #5C6670;
+    text-align: center;
+    font-weight: 200px;;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+h1 {
+    
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+a:link {
+    color: #5C6670;
+}
+
+a:visited {
+    color: #5C6670;
+}
+
+a:hover {
+    color: #FFC627;
+    background-color: #5C6670;
+}
+
+.centered {
+}
+
+#weather {
+}
+
+@media only screen and (max-width: 37.5em) {
+}
