@@ -22,7 +22,8 @@ header {
 }
 
 h1 {
-    
+    text-align: center;
+    color: #5C6670;
 }
 
 nav {
@@ -44,6 +45,12 @@ nav ul {
     font-size: 1.2em;
 }
 
+nav li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 a:link {
     color: #5C6670;
 }
@@ -58,10 +65,16 @@ a:hover {
 }
 
 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #weather {
 }
 
 @media only screen and (max-width: 37.5em) {
+    nav li {
+        display: block;
+    }
 }
