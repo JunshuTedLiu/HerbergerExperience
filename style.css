@@ -1,27 +1,54 @@
 body {
-    font-family: 'Work Sans', sans-serif;
+    padding: 0px 10px 0px 10px;
+    font-family: 'europa', sans-serif;
 }
 
 footer {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'europa', sans-serif;
     font-size: 0.85em;
-    margin: 10px;
     line-height: 1.5em;
     color: #5C6670;
 }
 
+button {
+    background-color: #FF7F32;
+    color: white;
+    font-family: 'europa', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+#start-button {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #8C1D40;
+}
+
+hr {
+    border: 0.5px solid #FF7F32;
+}
+
 header {
     position: sticky;
-    background-color: #5C6670;
     text-align: center;
     font-weight: 200px;;
-    color: white;
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+}
 
+p {
+    color: #5C6670;
 }
 
 h1 {
+    font-family: "europa", sans-serif;
     text-align: center;
     color: #5C6670;
 }
@@ -31,10 +58,10 @@ nav {
     font-weight: bold;
     background-color: #FFFFFF;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
 }
 
@@ -51,6 +78,11 @@ nav li {
     padding-right: 10px;
 }
 
+ul {
+    list-style-type: none;
+    color: #5C6670;
+}
+
 a:link {
     color: #5C6670;
 }
@@ -62,6 +94,7 @@ a:visited {
 a:hover {
     color: #FFC627;
     background-color: #5C6670;
+    text-decoration: none;
 }
 
 .centered {
@@ -71,6 +104,10 @@ a:hover {
 }
 
 #weather {
+}
+
+.animation-bounceInDown-2s {
+    -webkit-animation-duration: 5s;
 }
 
 @media only screen and (max-width: 37.5em) {

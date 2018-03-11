@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Robert LiKamWa - School of AME</title>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs="trackingMethod: best;">
+        <!-- create your content here. just a box for now -->
+        <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
+        <!-- define a camera which will move according to the marker position -->
+        <a-entity rotation="-90 0 0" position='-2.5 1.1 0'>
+
+            <a-text width='5' color='#FFFFFF' size=3 value="Robert LiKamWa is an assistant professor at Arizona State University, appointed in the School of Arts, Media and Engineering (AME) and the School of Electrical, Computer and Energy Engineering (ECEE). LiKamWa heads the Meteor Studio (formerly Mobile Systems Research Studio), which designs software and hardware systems to raise the performance, efficiency, privacy, and expressiveness of smartphones, tablets, IoT, VR/AR, drones, and other mobile systems. Prior to coming to ASU, LiKamWa completed his B.S., M.S., and Ph.D. degrees at Rice University in the Department of Electrical and Computer Engineering. He has also interned at Microsoft Research in Redmond, Washington and in Beijing, China, Samsung Mobile Processor Innovation Lab in Richardson, Texas, and the National Institute of Standards and Technology in Boulder, Colorado. 
+                           
+OFFICE HOUR for Spring 2018
+- Coming soon -">
+            </a-text>
+
+            <a-entity position='0 3 0' text-geometry='value: Robert LiKamWa'></a-entity>
+
+        </a-entity>
+
+        <a-box color="#5C6670" position='0 0.5 0' material='opacity: 0.9;' width=5.5 depth=5.3></a-box>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+</body>
+    
+</html>

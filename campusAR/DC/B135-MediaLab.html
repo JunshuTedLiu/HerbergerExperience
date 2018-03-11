@@ -1,21 +1,31 @@
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Media Lab - School of AME</title>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+</head>
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs="trackingMethod: best;">
-    <!-- create your content here. just a box for now -->
-    <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
-    <!-- define a camera which will move according to the marker position -->
-    <a-entity rotation="-90 0 0">
-      
-      <a-text color='#000000' position='1 0 0' value="The Design and the Arts Library is located on the first floor of the Design North building.  This portion of the ASU Library collection focuses strongly on design subjects, including: architecture, landscape architecture, interior design, graphic design, industrial design, and urban planning.  The Design and the Arts Library houses approximately 50,000 books, journals, and media items, as well as a special collection of primary source materials and archival drawings.
-      Yes, I made it.">
-      </a-text>
-        
-        <a-entity position='1 1.5 0' text-geometry='value: DC Media Lab'></a-entity>
-        
-      </a-entity>
-    <a-marker-camera preset='hiro'></a-marker-camera>
-  </a-scene>
+    <a-scene embedded arjs="trackingMethod: best;">
+        <!-- create your content here. just a box for now -->
+        <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
+        <!-- define a camera which will move according to the marker position -->
+        <a-entity rotation="-90 0 0" position='-2.5 1.1 0'>
+
+            <a-text width='5' color='#FFFFFF' size=3 value="The computer lab is equipped for digital media creation with fast computers and media applications. 15 dedicated 27” Apple iMac computers are on desks, equipped with the latest media software such as Apple Final Cut Pro, Logic Pro, Ableton Live, Cycling ‘74 Max/MSP, Adobe Creative Suite, and more. A large central set of tables in the lab provides a classroom or meeting space, and can be used for laptop computers. The lab is also equipped with a screen, projector and sound system for presentations.">
+            </a-text>
+
+            <a-entity position='0 1.75 0' text-geometry='value: DC Media Lab'></a-entity>
+
+        </a-entity>
+
+        <a-box color="#5C6670" position='0 0.5 0' material='opacity: 0.9;' width=5.5 depth=3></a-box>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
 </body>
+    
+</html>
