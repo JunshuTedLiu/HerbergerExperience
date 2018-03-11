@@ -39,7 +39,7 @@ hr {
 header {
     position: sticky;
     text-align: center;
-    font-weight: 200px;;
+    font-weight: 200px;
     padding: 10px;
 }
 
@@ -103,8 +103,7 @@ a:hover {
     margin-right: auto;
 }
 
-#weather {
-}
+#weather {}
 
 .animation-bounceInDown-2s {
     -webkit-animation-duration: 5s;
