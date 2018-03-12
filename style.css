@@ -103,7 +103,8 @@ a:hover {
     margin-right: auto;
 }
 
-#weather {}
+#weather {
+}
 
 .animation-bounceInDown-2s {
     -webkit-animation-duration: 5s;
