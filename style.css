@@ -103,7 +103,8 @@ a:hover {
     margin-right: auto;
 }
 
-#weather {
+#weather a:hover {
+    background-color: transparent;
 }
 
 .animation-bounceInDown-2s {
