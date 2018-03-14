@@ -23,7 +23,9 @@
 </head>
 
 <body>
-    <header>
+    
+    <div class="page">
+        <header>
         <a href="index.html"><img src="assets/The%20Herberger%20Experience%20Logo%20ASUGray.png" width=300px;></a>
         <p style="text-align: center"><strong>Augmented Reality Campus Tour</strong></p>
     </header>
@@ -37,52 +39,64 @@
             <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
-    <div id="weather">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/33d43n111d94/tempe/?unit=us" data-label_1="Arizona State University" data-label_2="Tempe, AZ" data-font="Helvetica" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-textcolor="#5C6670" data-highcolor="#FF7F32" data-lowcolor="#00A3E0" data-suncolor="#FFC627" >Arizona State University Tempe, AZ</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-    </div>
-    <div style="text-align: center;" >
-    <a href="https://twitter.com/herberger_exp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @herberger_exp</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <h1>
-        Public beta test available now
-    </h1>
-    <p>
-        When you are inside a building, you might see some AR markers on the wall with QR codes and "Hiro" written on it.
-    </p>
-    <p>
-        They are basically taped next to the doorplates of the rooms. Those rooms are facilities and faculty offices. Those codes contain information that could help you get familiar with these facilities and faculties.
-    </p>
-    <h3>
-        We treasure your feedback!
-    </h3>
-    <p>
-        While this is a "beta" release and the project is still in progress, we're still working on adding more contents, improve our designs, and get permission on putting our "AR-code"s on campus. You're welcome to give us any feedback and advice by <a href="contact.html">contacting us</a> through e-mail.
-    </p>
-    <p style="font-size: 1.25em;">
-        <strong>COMING SOON April 2018</strong>
-    </p>
+        
+        <div style="padding-top: 20px; text-align: center;">
+            <a href="https://twitter.com/herberger_exp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @herberger_exp</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <h1>
+            Public beta test available now
+        </h1>
+        <p>
+            When you are inside a building, you might see some AR markers on the wall with QR codes and "Hiro" written on it.
+        </p>
+        <p>
+            They are basically taped next to the doorplates of the rooms. Those rooms are facilities and faculty offices. Those codes contain information that could help you get familiar with these facilities and faculties.
+        </p>
+        <h3>
+            We treasure your feedback!
+        </h3>
+        <p>
+            While this is a "beta" release and the project is still in progress, we're still working on adding more contents, improve our designs, and get permission on putting our "AR-code"s on campus. You're welcome to give us any feedback and advice by <a href="contact.html">contacting us</a> through e-mail.
+        </p>
+        <p style="font-size: 1.25em;">
+            <strong>COMING SOON April 2018</strong>
+        </p>
 
-    <hr>
+        <hr>
 
-    <h2>DEVELOPER DEBUGGING TOOLS</h2>
-    <nav>
-        <ul>
-            <!--<li><a href="campusAR.html">Campus AR</a></li>
+        <h2>DEVELOPER DEBUGGING TOOLS</h2>
+        <nav>
+            <ul>
+                <!--<li><a href="campusAR.html">Campus AR</a></li>
             <li><a href="inside.html">Inside Herberger</a></li>
             <li><a href="interest.html">Find Interest</a></li>
             <li><a href="clips.html">Clips</a></li>-->
-            <li><a href="campusAR-test.html">Campus AR interface testing</a></li>
-            <li><a href="campusAR/sample-rooms.html">Sample rooms</a></li>
-            <li><a href="https://github.com/JunshuTedLiu/HerbergerExperience">GitHub</a></li>
-        </ul>
-    </nav>
+                <li><a href="campusAR-test.html">Campus AR interface testing</a></li>
+                <li><a href="campusAR/sample-rooms.html">Sample rooms</a></li>
+                <li><a href="https://github.com/JunshuTedLiu/HerbergerExperience">GitHub</a></li>
+            </ul>
+        </nav>
+        <div id="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/33d43n111d94/tempe/?unit=us" data-label_1="Arizona State University" data-label_2="Tempe, AZ" data-font="Helvetica" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-textcolor="#5C6670" data-highcolor="#FF7F32" data-lowcolor="#00A3E0" data-suncolor="#FFC627">Arizona State University Tempe, AZ</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+            </script>
+        </div>
+    </div>
+
 </body>
 
 <footer>
-    <hr> &copy; 2017~2018 The Herberger Experience Team. All rights reserved.
+    &copy; 2017~2018 The Herberger Experience Team. All rights reserved.
     <br>
     <a href="http://www.annienorenberg.com">Annie Norenberg</a>,
     <a href="http://www.junshuliu.com">Junshu Liu</a>, Trevor McLaws, Logan Park,
