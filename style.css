@@ -1,7 +1,44 @@
 body {
+	-webkit-animation: color_change 1s infinite alternate;
+	-moz-animation: color_change 1s infinite alternate;
+	-ms-animation: color_change 1s infinite alternate;
+	-o-animation: color_change 1s infinite alternate;
+	animation: color_change 1s infinite alternate;
+}
+
+body {
+	animation-name: color_change;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes color_change {
+	from { background-color: #FF7F32; }
+	to { background-color: #5C6670; }
+}
+@-moz-keyframes color_change {
+	from { background-color: #FF7F32; }
+	to { background-color: #5C6670; }
+}
+@-ms-keyframes color_change {
+	from { background-color: #FF7F32; }
+	to { background-color: #5C6670; }
+}
+@-o-keyframes color_change {
+	from { background-color: #FF7F32; }
+	to { background-color: #5C6670; }
+}
+@keyframes color_change {
+	from { background-color: #FF7F32; }
+	to { background-color: #5C6670; }
+}
+
+body {
     padding: 0px 10px 0px 10px;
     font-family: 'europa', sans-serif;
-    background-color: #FF7F32;
+    /*background-color: #FF7F32;*/
+    background-color: #5C6670;
 }
 
 footer {
@@ -31,7 +68,7 @@ header a:hover {
 
 .page {
     margin-top: 20px;
-    max-width: 800px;
+    max-width: 1024px;
     display: block;
     margin-left: auto;
     margin-right: auto;
