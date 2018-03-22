@@ -46,12 +46,12 @@ footer {
     font-size: 0.85em;
     line-height: 1.5em;
     color: #FFC627;
-    padding-top: 15px;
+    padding-top: 10px;
     
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1054px;
+    max-width: 1024px;
 }
 
 footer a:link {
@@ -68,7 +68,7 @@ header a:hover {
 
 .page {
     margin-top: 20px;
-    max-width: 800px;
+    max-width: 824px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -191,9 +191,7 @@ a:hover {
     nav li {
         display: block;
     }
-    .page {
-        box-shadow: 0px 7px #FFC627;
-    }
+
     .centered-images {
         width: 80%;
     }
