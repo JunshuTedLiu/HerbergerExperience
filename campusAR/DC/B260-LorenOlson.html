@@ -11,7 +11,7 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
-<!--    <a-scene embedded arjs="trackingMethod: best;" environment="flatShading: true">-->
+    <!--    <a-scene embedded arjs="trackingMethod: best;" environment="flatShading: true">-->
     <a-scene stats embedded arjs='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
         <!-- create your content here. just a box for now -->
         <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
@@ -30,19 +30,19 @@
 
         </a-entity>
 
-        
-            <a-assets>
-                <video playsinline id="pokemon" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Junshu-PokemonMac1.mov"></video>
-                <video playsinline id="herbergerold" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/TheHerbergerExperienceOld.mp4"></video>
-                <video playsinline id="spring2016" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Dynamically%20Speaking%20Final%20Presentation.mp4"></video>
-            </a-assets>
-        
 
-            <!-- Using the asset management system. -->
-            <a-video src="#pokemon" width="1.6" height="0.9" rotation="-90 0 0" position="0 0 0"></a-video>
-            <a-video src="#herbergerold" width="1.6" height="0.9" rotation="-90 0 0" position="-1.7 0 0"></a-video>
-            <a-video src="#spring2016" width="1.6" height="0.9" rotation="-90 0 0" position="1.7 0 0"></a-video>
-        
+        <a-assets>
+            <video playsinline id="pokemon" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Junshu-PokemonMac1.mov"></video>
+            <video playsinline id="herbergerold" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/TheHerbergerExperienceOld.mp4"></video>
+            <video playsinline id="spring2016" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Dynamically%20Speaking%20Final%20Presentation.mp4"></video>
+        </a-assets>
+
+
+        <!-- Using the asset management system. -->
+        <a-video src="#pokemon" width="1.6" height="0.9" rotation="-90 0 0" position="0 0 0"></a-video>
+        <a-video src="#herbergerold" width="1.6" height="0.9" rotation="-90 0 0" position="-1.7 0 0"></a-video>
+        <a-video src="#spring2016" width="1.6" height="0.9" rotation="-90 0 0" position="1.7 0 0"></a-video>
+
 
         <a-box color="#FFC627" position='0 0 -1.5' material='opacity: 0.9;' width=2.3 depth=0.3 height=0.3></a-box>
 
