@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todd Ingalls - School of AME</title>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<!--    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>-->
+    <script src="../../ar-js-1-5-1/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="apple-mobile-web-app-capable" content="yes, width=device-width, user-scalable=no, minimum-scale:1.0, maximum-scale:1.0">
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <!--    <a-scene embedded arjs="trackingMethod: best;" environment="flatShading: true">-->
+    <a-scene stats embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+        <!-- create your content here. just a box for now -->
+        <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
+        <!-- define a camera which will move according to the marker position -->
+        <a-entity rotation="-90 0 0" position='-1.1 0.3 0'>
+
+            <a-entity position='0.2 1.75 0' text-geometry='value: Todd Ingalls; size: 0.25'></a-entity>
+
+            <a-circle color="#CCC" radius="0.5" position='1.1 -1 0'></a-circle>
+
+            <a-text position='0.1 1.52 -0.1' width='3' color='#000000' value="School of AME. Composer. Max/MSP."></a-text>
+
+            <a-text position='0.79 -0.8 0.05' width='2' color='#000000' value="OFFICE HOURS"></a-text>
+            <a-text position='0.75 -1.0 0.05' width='2' color='#000000' value="Mon Tue Wed Thu"></a-text>
+            <a-text position='0.79 -1.2 0.05' width='2' color='#000000' value="2:00 ~ 3:00 pm"></a-text>
+
+        </a-entity>
+
+        <a-assets>
+            <img id="pic1" src="../../assets/Professors-Portrait/todd.jpeg">
+            <img id="pic2" src="../../assets/Projects/DC/ToddIngalls-XinWeiSha/iStage.JPG">
+            <img id="pic3" src="../../assets/Projects/DC/ToddIngalls-XinWeiSha/MaxMSP.JPG">
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-image src="#pic1" width="1.48" height="1.41" rotation="-90 0 0" position="-1.5 0 -0.54"></a-image>
+<!--        <a-text href="https://google.com" value="Learn more" width="3" rotation="-90 0 0" position="-1.85 0 0.2"></a-text>-->
+        <a-image src="#pic2" width="1.48" height="1.41" rotation="-90 0 0" position="0 0 -0.54"></a-image>
+<!--        <a-text href="https://google.com" value="Learn more" width="3" rotation="-90 0 0" position="-0.35 0 0.2"></a-text>-->
+        <a-image src="#pic3" width="1.48" height="1.41" rotation="-90 0 0" position="1.5 0 -0.54"></a-image>
+<!--        <a-text href="https://google.com" value="Learn more" width="3" rotation="-90 0 0" position="1.15 0 0.2"></a-text>-->
+
+
+        <!--<a-assets>
+                <video playsinline id="pokemon" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Junshu-PokemonMac1.mov"></video>
+                <video playsinline id="herbergerold" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/TheHerbergerExperienceOld.mp4"></video>
+                <video playsinline id="spring2016" autoplay loop="true" src="../../assets/Projects/DC/LorenOlson/Dynamically%20Speaking%20Final%20Presentation.mp4"></video>
+            </a-assets>-->
+
+
+        <!-- Using the asset management system. -->
+
+        <!--<a-video src="#pokemon" width="1.6" height="0.9" rotation="-90 0 0" position="0 0 0"></a-video>
+            <a-video src="#herbergerold" width="1.6" height="0.9" rotation="-90 0 0" position="-1.7 0 0"></a-video>
+            <a-video src="#spring2016" width="1.6" height="0.9" rotation="-90 0 0" position="1.7 0 0"></a-video>-->
+
+
+        <a-box color="#FFC627" position='0.1 0 -1.5' material='opacity: 0.9;' width=2.5 depth=0.3 height=0.3></a-box>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
+    <a-text width='3' color='#FFFFFF' value="Visit our website">
+    </a-text>
+</body>
+
+</html>

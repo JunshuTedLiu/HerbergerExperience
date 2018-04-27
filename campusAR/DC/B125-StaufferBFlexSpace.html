@@ -16,20 +16,29 @@
         <!-- create your content here. just a box for now -->
         <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
         <!-- define a camera which will move according to the marker position -->
-        <a-entity rotation="-90 0 0" position='-1.5 0.2 0'>
+        <a-entity rotation="-90 0 0" position='-1.5 0.2 -0.4'>
 
-            <a-text width='3' color='#FFFFFF' size=3 value="ASU’s Stauffer building consists of several digital labs attached to one large reconfigurable learning space (Flex Space). The building is a 4800 square foot space designed to be flexible and reconfigured quickly. A high quality, sound proof, convention center style, with integrated movable wall can divide the space in half.
+            <a-text width='3' color='#FFFFFF' value="ASU’s Stauffer building consists of several digital labs attached to one large reconfigurable learning space (Flex Space). The building is a 4800 square foot space designed to be flexible and reconfigured quickly. A high quality, sound proof, convention center style, with integrated movable wall can divide the space in half.
 
 This is the biggest classroom in this building. Most of the important Digital Culture classes are being held in this room. Rounded tables make here a great place for team collaboration.
 This is also a studio for AME courses.
 On Thursday, School of AME will provide speaker series by digital artists from all around the world. For more information about our speakers, please follow Digital Culture ASU’s twitter, @DigitalCultureU.">
             </a-text>
 
-            <a-entity position='0 1.75 0' text-geometry='value: Flex Space'></a-entity>
+<!--            <a-entity position='0 1.75 0' text-geometry='value: Flex Space'></a-entity>-->
+            
+            
 
+            <a-text position='1.2 -2.3 0.05' width='2' color='#000000' value="OPENING HOURS"></a-text>
+            <a-text position='1 -2.5 0.05' width='2' color='#000000' value="Monday - Friday"></a-text>
+            <a-text position='1 -2.7 0.05' width='2' color='#000000' value="9a~8p 
+                                                                               based on class schedule"></a-text>
+<!--Monday - Friday: 9am - 8am based on class schedule.-->
         </a-entity>
 
-        <a-box color="#5C6670" position='0 0 0' material='opacity: 0.9;' width=3.5 depth=3.12 height=0.3></a-box>
+        <a-box color="#5C6670" position='0 0 -0.4' material='opacity: 0.9;' width=3.5 depth=3.12 height=0.3></a-box>
+        
+        <a-box color="#FF7F32" position='0 0 2.1' width=1.3 depth=0.8 height=0.3></a-box>
 
         <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
