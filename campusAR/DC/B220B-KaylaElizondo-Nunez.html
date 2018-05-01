@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kayla Elizondo-Nunez - School of AME</title>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<!--    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>-->
+    <script src="../../ar-js-1-5-1/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="apple-mobile-web-app-capable" content="yes, width=device-width, user-scalable=no, minimum-scale:1.0, maximum-scale:1.0">
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <!--    <a-scene embedded arjs="trackingMethod: best;" environment="flatShading: true">-->
+    <a-scene stats embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+        <!-- create your content here. just a box for now -->
+        <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
+        <!-- define a camera which will move according to the marker position -->
+        <a-entity rotation="-90 0 0" position='-1.1 0.3 0'>
+
+            <a-entity position='-0.5 1.75 0' text-geometry='value: Kayla Elizondo-Nunez; size: 0.25'></a-entity>
+
+            <a-circle color="#CCC" radius="0.5" position='1.1 -1 0'></a-circle>
+
+            <a-text position='0.1 1.52 -0.1' width='3' color='#000000' value="Digital Culture Education Coordinator."></a-text>
+
+            <a-text position='0.79 -0.8 0.05' width='2' color='#000000' value="OFFICE HOURS"></a-text>
+            <a-text position='0.75 -1.0 0.05' width='2' color='#000000' value="-"></a-text>
+            <a-text position='0.79 -1.2 0.05' width='2' color='#000000' value="-"></a-text>
+            
+            <a-text position='0.6 0.4' width='2.5' color='#FFFFFF' value="Following her Bachelor’s degree in English, she pursued her Master’s degree in Interdisciplinary Studies with concentrations in Digital Media and Literacy. In graduate school, Kayla’s research focused on reinventing the way digital technologies assist college writing and resulted in the creation of a media-rich English 101 course.
+            
+            Aside from researching the latest in Cosmology, Kayla enjoys advocating the use of the Oxford comma, painting pictures of cats, and beading.">
+            </a-text>
+
+        </a-entity>
+        
+        <a-box color="#5C6670" position='0.75 0 -0.5' material='opacity: 0.9;' width=2.8 depth=1.52 height=0.3></a-box>
+
+        <a-assets>
+            <img id="pic1" src="../../assets/Professors-Portrait/kayla.png">
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-image src="#pic1" width="1.48" height="1.41" rotation="-90 0 0" position="-1.5 0 -0.54"></a-image>
+        
+
+
+        <a-box color="#FFC627" position='0.1 0 -1.5' material='opacity: 0.9;' width=2.5 depth=0.3 height=0.3></a-box>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+<!--
+        <a-marker-camera type='pattern' patternUrl='pattern-marker.patt'></a-marker-camera>
+        <a-marker type='pattern' patternUrl='pattern-marker.patt'></a-marker>
+-->
+    </a-scene>
+    <a-text width='3' color='#FFFFFF' value="Visit our website">
+    </a-text>
+</body>
+
+</html>
