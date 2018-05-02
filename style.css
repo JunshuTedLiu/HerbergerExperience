@@ -181,6 +181,14 @@ a:hover {
     width: 50%;
 }
 
+.centered-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 400px;
+}
+
 #weather a:hover {
     background-color: transparent;
 }
@@ -196,6 +204,10 @@ a:hover {
 
     .centered-images {
         width: 80%;
+    }
+    .centered-video {
+        width: 100%;
+        height: 200px;
     }
     .page {
         padding-left: 15px;
